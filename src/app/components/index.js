@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
-import {Page1,Page2,Page3,Page4} from './page'
-import { Stage1, Stage2, Stage3} from './page'
+import {Page1,Page2,Page3,Page4,Page11,Page12} from './page'
+import { Stage1, Stage2, Stage3, Stage4} from './page'
 
 const Swiper = window.Swiper;
 
@@ -39,6 +39,9 @@ class Index extends Component {
         if(swiper.activeIndex !== 4) {
           that.setState({'stage3':!that.state.stage3});
         }
+        if(swiper.activeIndex !== 5) {
+          that.setState({'stage4':!that.state.stage4});
+        }
       }
     });
     // console.log(swiperH);
@@ -58,10 +61,11 @@ class Index extends Component {
           <Stage1 flag={this.state.stage1}/>
           <Stage2 flag={this.state.stage2}/>
           <Stage3 flag={this.state.stage3}/>
-
+          <Stage4 flag={this.state.stage4}/>
+          <Page11/>
+          <Page12/>
         </div>
-    </div>
-
+      </div>
     )
   }
 }
