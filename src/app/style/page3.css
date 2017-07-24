@@ -1,0 +1,13 @@
+.video {
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 100%;
+}
+
+.img-page3-1 {
+  position: absolute;
+  bottom: 7%;
+  width:50%;
+  right:10%;
+}

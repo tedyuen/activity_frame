@@ -11,10 +11,16 @@ class Stage1 extends Component {
   componentDidMount() {
     let that = this;
     window.setTimeout(function(){
-        new Swiper('.swiper-container-stage1', {
-          onSlideChangeEnd: function(swiper) {
-            that.setState({'swiperV':swiper});
-          }
+      new Swiper('.swiper-container-stage1', {
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+          window.swiperAnimateCache2(swiper); //隐藏动画元素
+          window.swiperAnimate2(swiper); //初始化完成开始动画
+        },
+        onSlideChangeEnd: function(swiper) {
+          window.swiperAnimate2(swiper); //每个slide切换结束时也运行当前slide动画
+          window.swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+          that.setState({'swiperV':swiper});
+        }
       },100);
     });
 

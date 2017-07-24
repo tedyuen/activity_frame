@@ -13,7 +13,13 @@ class Stage2 extends Component {
     let that = this;
     window.setTimeout(function(){
         new Swiper('.swiper-container-stage2', {
+          onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            window.swiperAnimateCache2(swiper); //隐藏动画元素
+            window.swiperAnimate2(swiper); //初始化完成开始动画
+          },
           onSlideChangeEnd: function(swiper) {
+            window.swiperAnimate2(swiper); //每个slide切换结束时也运行当前slide动画
+            window.swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
             that.setState({'swiperV':swiper});
           }
       },100);
@@ -21,7 +27,6 @@ class Stage2 extends Component {
 
   }
   componentWillReceiveProps(nextProps) {
-      console.log("receiver props stage2: "+this.props.flag+":"+ nextProps.flag);
     if(this.props.flag !== nextProps.flag && this.state.swiperV) {
       this.state.swiperV.slideTo(0);
     }

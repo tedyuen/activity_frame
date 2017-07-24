@@ -1,0 +1,26 @@
+.img-page2-logo {
+  position: absolute;
+  top:5%;
+  width:50%;
+  left:5%;
+}
+.img-page2-1 {
+  position: absolute;
+  bottom: 5%;
+  width:75%;
+  right:0px;
+}
+.img-page2-2 {
+  position: absolute;
+  bottom: 5%;
+  width:2.64%;
+  right:75%;
+  z-index: 100;
+}
+.img-page2-3 {
+  position: absolute;
+  bottom: 7%;
+  width:65%;
+  right:5%;
+  z-index: 101;
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
-import {Page1,Page2,Page3,Page4,Page11,Page12} from './page'
+import {Page1,Page2,Page11,Page12} from './page'
 import { Stage1, Stage2, Stage3, Stage4} from './page'
 
 const Swiper = window.Swiper;
@@ -16,25 +16,20 @@ class Index extends Component {
     }
   }
   componentDidMount() {
-    // effect: 'cube',
-    // grabCursor: true,
-    // cube: {
-    //   shadow: true,
-    //   slideShadows: true,
-    //   shadowOffset: 20,
-    //   shadowScale: 0.94
-    // },
     let that = this;
     window.setTimeout(function(){
       new Swiper('.swiper-container-v', {
         direction: 'vertical',
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+          window.swiperAnimateCache(swiper); //隐藏动画元素
+          window.swiperAnimate(swiper); //初始化完成开始动画
+        },
         onSlideChangeEnd: function(swiper) {
-          console.log(swiper.activeIndex);
+          window.swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
           if(swiper.activeIndex !== 2) {
             that.setState({'stage1':!that.state.stage1});
           }
           if(swiper.activeIndex !== 3) {
-            console.log("!!:  "+that.state.stage2);
             that.setState({'stage2':!that.state.stage2});
           }
           if(swiper.activeIndex !== 4) {
@@ -46,12 +41,6 @@ class Index extends Component {
         }
       });
     },50);
-    // console.log(swiperH);
-
-    // console.log(this.state.stage1);
-    // window.setTimeout(function(){
-    //   swiperH.slideTo(2)
-    // },1000);
   }
   render() {
 

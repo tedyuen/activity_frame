@@ -1,0 +1,18 @@
+.img-page1-log {
+  position: absolute;
+  top:5%;
+  right:15%;
+}
+
+.img-page1-2 {
+  position: absolute;
+  left:15%;
+  width:70%;
+  bottom: 15%;
+}
+.img-page1-3 {
+  position: absolute;
+  left:12%;
+  width:76%;
+  bottom: 7%;
+}
