@@ -1,0 +1,4 @@
+
+require.ensure([], ()=>{
+  require('./App');
+})
