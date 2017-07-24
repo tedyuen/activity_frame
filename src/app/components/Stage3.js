@@ -10,10 +10,12 @@ class Stage3 extends Component {
   }
   componentDidMount() {
     let that = this;
-    let swiperV = new Swiper('.swiper-container-stage3', {
-      onSlideChangeEnd: function(swiper) {
-        that.setState({'swiperV':swiper});
-      }
+    window.setTimeout(function(){
+        new Swiper('.swiper-container-stage3', {
+          onSlideChangeEnd: function(swiper) {
+            that.setState({'swiperV':swiper});
+          }
+      },100);
     });
 
   }

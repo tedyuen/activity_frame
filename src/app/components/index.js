@@ -25,25 +25,27 @@ class Index extends Component {
     //   shadowScale: 0.94
     // },
     let that = this;
-    let swiperH = new Swiper('.swiper-container-v', {
-      direction: 'vertical',
-      onSlideChangeEnd: function(swiper) {
-        console.log(swiper.activeIndex);
-        if(swiper.activeIndex !== 2) {
-          that.setState({'stage1':!that.state.stage1});
+    window.setTimeout(function(){
+      new Swiper('.swiper-container-v', {
+        direction: 'vertical',
+        onSlideChangeEnd: function(swiper) {
+          console.log(swiper.activeIndex);
+          if(swiper.activeIndex !== 2) {
+            that.setState({'stage1':!that.state.stage1});
+          }
+          if(swiper.activeIndex !== 3) {
+            console.log("!!:  "+that.state.stage2);
+            that.setState({'stage2':!that.state.stage2});
+          }
+          if(swiper.activeIndex !== 4) {
+            that.setState({'stage3':!that.state.stage3});
+          }
+          if(swiper.activeIndex !== 5) {
+            that.setState({'stage4':!that.state.stage4});
+          }
         }
-        if(swiper.activeIndex !== 3) {
-          console.log("!!:  "+that.state.stage2);
-          that.setState({'stage2':!that.state.stage2});
-        }
-        if(swiper.activeIndex !== 4) {
-          that.setState({'stage3':!that.state.stage3});
-        }
-        if(swiper.activeIndex !== 5) {
-          that.setState({'stage4':!that.state.stage4});
-        }
-      }
-    });
+      });
+    },50);
     // console.log(swiperH);
 
     // console.log(this.state.stage1);
