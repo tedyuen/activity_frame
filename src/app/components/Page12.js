@@ -12,7 +12,7 @@ class Page12 extends Component {
       <div className="swiper-slide img img-12">
         <img src={img1} alt="img1" className="img-page12-1 ani" style={{visibility:'hidden'}} data-slide-in="at 0 from fadeIn use swing during 800"/>
         <img src={img2} alt="img2" className="img-page12-2 ani" style={{visibility:'hidden'}} data-slide-in="at 0 from fadeInUp use swing during 800"/>
-        <img src={img3} alt="img3" className="img-page12-3 ani" style={{visibility:'hidden'}} data-slide-in="at 0 from flipInY use swing during 800"/>
+        <img src={img3} alt="img3" className="img-page12-3 ani" style={{visibility:'hidden'}} data-slide-in="at 0 from fadeInUp use swing during 800"/>
       </div>
     )
   }

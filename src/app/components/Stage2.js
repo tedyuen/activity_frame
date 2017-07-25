@@ -19,7 +19,7 @@ class Stage2 extends Component {
           },
           onSlideChangeEnd: function(swiper) {
             window.swiperAnimate2(swiper); //每个slide切换结束时也运行当前slide动画
-            window.swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+            // window.swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
             that.setState({'swiperV':swiper});
           }
       },100);

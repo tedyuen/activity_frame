@@ -7,7 +7,9 @@ import img3 from '../images/page2/3.png'
 const $ = window.$
 class Page2 extends Component {
   componentDidMount() {
-    $('.img-page2-1').css('height',$('.img-page2-2').height());
+    window.setTimeout(function(){
+      $('.img-page2-1').css('height',$('.img-page2-2').height());
+    },100);
   }
   render() {
 

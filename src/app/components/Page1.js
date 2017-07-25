@@ -16,7 +16,7 @@ class Page1 extends Component {
         <img src={img3} alt="img3" className="img-page1-3 ani" style={{visibility:'hidden'}} data-slide-in="at 0 from fadeInUp use swing during 800"/>
         <div className="laoding-back"></div>
         <div id="loader-container" >
-          <p id="loadingText">Loading</p>
+          <p id="loadingText"></p>
         </div>
       </div>
     )
