@@ -4,6 +4,7 @@ import '../style/page5.css'
 import { DefaultPlayer as Video } from 'react-html5video';
 import 'react-html5video/dist/styles.css';
 import img1 from '../images/page5/1.png'
+import pointWhite from '../images/point_white.png'
 
 
 class Page5 extends Component {
@@ -23,6 +24,7 @@ class Page5 extends Component {
           </Video>
         </div>
         <img src={img1} alt="img1" className="img-page5-1 ani" style={{visibility:'hidden'}} data-slide-in="at 0 from fadeInLeft use swing during 800"/>
+        <img src={pointWhite} alt="pointWhite" className="img-page5-2 ani" onClick={this.props.goForm} style={{visibility:'hidden'}} data-slide-in="at 0 from fadeInLeft use swing during 800"/>
 
 
       </div>

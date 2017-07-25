@@ -37,7 +37,7 @@ class Stage1 extends Component {
       <div className="swiper-slide">
         <div className="swiper-container swiper-container-stage1">
           <div className="swiper-wrapper">
-            <Page3/>
+            <Page3 goForm={this.props.goForm}/>
             <Page4/>
           </div>
         </div>
