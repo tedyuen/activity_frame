@@ -12,6 +12,7 @@ import imgItem3C from '../images/item/item_3_check.png'
 import imgItem3U from '../images/item/item_3_uncheck.png'
 import imgItem4C from '../images/item/item_4_check.png'
 import imgItem4U from '../images/item/item_4_uncheck.png'
+import img2 from '../images/page4/1.png'
 const $ = window.$
 class Page11 extends Component {
   constructor(props) {
@@ -82,7 +83,10 @@ class Page11 extends Component {
 
     return (
       <div className="swiper-slide img img-11">
+        <img src={img2} alt="img2" className="img-page4-1 ani" style={{visibility:'hidden'}} data-slide-in="at 0 from fadeIn use swing during 600"/>
+
         <div className="page11-top">
+
           <img src={img1} alt="img1" className="img-page11-1 ani" style={{visibility:'hidden'}} data-slide-in="at 0 from fadeInDown use swing during 800"/>
           <div className="page11-form">
             <Item className="item r ani" imgSrc={this.getImg(0)} onChange={this.changeImg} dataIndex="0" dataSlideIn="at 0 from fadeInLeft use swing during 800"/>

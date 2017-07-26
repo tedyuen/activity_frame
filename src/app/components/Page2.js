@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import './index.css';
 import '../style/page2.css'
 import logoImg from '../images/page2/logo.png'
-import img2 from '../images/page2/2.png'
+import img2 from '../images/page2/2.jpg'
 import img3 from '../images/page2/3.png'
 const $ = window.$
 class Page2 extends Component {
   componentDidMount() {
     window.setTimeout(function(){
       $('.img-page2-1').css('height',$('.img-page2-2').height());
-    },100);
+    },200);
   }
   render() {
 

@@ -14,14 +14,14 @@
 .img-page2-2 {
   position: absolute;
   bottom: 5%;
-  width:2.64%;
+  width:2.9%;
   right:75%;
   z-index: 100;
 }
 .img-page2-3 {
   position: absolute;
-  bottom: 7%;
-  width:65%;
-  right:5%;
+  bottom: 8%;
+  width:63%;
+  right:4.5%;
   z-index: 101;
 }
