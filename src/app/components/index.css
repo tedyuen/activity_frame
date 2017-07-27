@@ -69,7 +69,19 @@
 }
 .img-point1 {
   position: absolute;
-  width:20%;
-  left:40%;
+  width:10%;
+  left:45%;
   top:40%;
+}
+.img-point-new {
+  position: absolute;
+  right: 11%;
+  width:15%;
+  bottom:8%;
+}
+.up-arrow {
+  position: absolute;
+  left: 45%;
+  width:10%;
+  bottom:3%;
 }

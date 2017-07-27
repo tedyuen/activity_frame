@@ -4,6 +4,7 @@ import '../style/page1.css'
 import logoImg from '../images/page1/logo.png'
 import img2 from '../images/page1/2.png'
 import img3 from '../images/page1/3.png'
+import upArrow from '../images/up_arrow.png'
 
 class Page1 extends Component {
 
@@ -18,6 +19,7 @@ class Page1 extends Component {
         <div id="loader-container" >
           <p id="loadingText"></p>
         </div>
+        <img src={upArrow} alt="upArrow" className="up-arrow"/>
       </div>
     )
   }

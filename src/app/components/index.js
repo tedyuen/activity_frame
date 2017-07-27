@@ -22,6 +22,8 @@ class Index extends Component {
     this.state.swiper.slideTo(6);
   }
   componentDidMount() {
+    $('.up-arrow').animo({ animation: "fadeInUp", duration: 1, iterate:"infinite",keep: true });
+
     let that = this;
     window.setTimeout(function(){
       new Swiper('.swiper-container-v', {
@@ -62,8 +64,8 @@ class Index extends Component {
         <div className="swiper-wrapper">
           <Page1/>
           <Page2/>
-          <Stage1 flag={this.state.stage1} goForm={this.goForm}/>
           <Stage2 flag={this.state.stage2} goForm={this.goForm}/>
+          <Stage1 flag={this.state.stage1} goForm={this.goForm}/>
           <Stage3 flag={this.state.stage3} goForm={this.goForm}/>
           <Stage4 flag={this.state.stage4} goForm={this.goForm}/>
           <Page11/>

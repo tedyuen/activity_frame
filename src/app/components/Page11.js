@@ -13,6 +13,7 @@ import imgItem3U from '../images/item/item_3_uncheck.png'
 import imgItem4C from '../images/item/item_4_check.png'
 import imgItem4U from '../images/item/item_4_uncheck.png'
 import img2 from '../images/page4/1.png'
+import upArrow from '../images/up_arrow.png'
 const $ = window.$
 class Page11 extends Component {
   constructor(props) {
@@ -89,8 +90,8 @@ class Page11 extends Component {
 
           <img src={img1} alt="img1" className="img-page11-1 ani" style={{visibility:'hidden'}} data-slide-in="at 0 from fadeInDown use swing during 800"/>
           <div className="page11-form">
-            <Item className="item r ani" imgSrc={this.getImg(0)} onChange={this.changeImg} dataIndex="0" dataSlideIn="at 0 from fadeInLeft use swing during 800"/>
-            <Item className="item ani" imgSrc={this.getImg(1)} onChange={this.changeImg} dataIndex="1" dataSlideIn="at 0 from fadeInRight use swing during 800"/>
+            <Item className="item r ani" imgSrc={this.getImg(1)} onChange={this.changeImg} dataIndex="1" dataSlideIn="at 0 from fadeInLeft use swing during 800"/>
+            <Item className="item ani" imgSrc={this.getImg(0)} onChange={this.changeImg} dataIndex="0" dataSlideIn="at 0 from fadeInRight use swing during 800"/>
             <Item className="item r ani" imgSrc={this.getImg(2)} onChange={this.changeImg} dataIndex="2" dataSlideIn="at 0 from fadeInLeft use swing during 800"/>
             <Item className="item ani" imgSrc={this.getImg(3)} onChange={this.changeImg} dataIndex="3" dataSlideIn="at 0 from fadeInRight use swing during 800"/>
           </div>
@@ -105,6 +106,7 @@ class Page11 extends Component {
           <div className="btn-submit ani" style={{visibility:'hidden'}} data-slide-in="at 0 from fadeInUp use swing during 800" onClick={this.handleGoClick}>提交</div>
         </div>
 
+        <img src={upArrow} alt="upArrow" className="up-arrow"/>
       </div>
     )
   }
