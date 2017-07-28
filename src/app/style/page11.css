@@ -1,12 +1,12 @@
 .page11-top {
   position: relative;
   width:100%;
-  margin-top: 10%;
+  margin-top: 13%;
 }
 .img-page11-1 {
   position: absolute;
   width:60%;
-  top:50px;
+  top:30px;
   left: 20%;
 }
 
@@ -14,16 +14,16 @@
   position: absolute;
   width:80%;
   left:10%;
-  top:150px;
+  top:160px;
 }
 
 .item {
   float: left;
-  width:48%;
-  margin-bottom: 5%;
+  width:49%;
+  margin-bottom: 2%;
 }
 .item.r {
-  margin-right: 4%;
+  margin-right: 2%;
 }
 .item-img {
   width:100%;

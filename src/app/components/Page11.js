@@ -48,7 +48,7 @@ class Page11 extends Component {
 
   componentDidMount() {
     window.setTimeout(function(){
-      $('.img-page11-1').css('height',$('.img-page11-1').width()*0.296)
+      $('.img-page11-1').css('height',$('.img-page11-1').width()*0.4475)
     },100);
   }
   handleGoClick() {
