@@ -64,7 +64,7 @@ class Page11 extends Component {
     }else{
       $.ajax({
         type:'post',
-        url:'http://optest.reachmedia.cn:8282/admin/lego/add.test',
+        url:'http://optest.reachmedia.cn:8084/sch/lego/add.do',
         data:{name:name,legoId:legoId,mobile:mobile},//这里不是json，是表单参数
         success:function(data){
           console.log(data);
